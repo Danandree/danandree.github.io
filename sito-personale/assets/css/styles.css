@@ -1,0 +1,227 @@
+:root {
+    --navbar-hight: 50px;
+}
+* {
+    margin: 0;
+}
+
+.footer {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.loghi-social{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.loghi-social img {
+    max-height: 20px;
+}
+
+
+img {
+    height: 200px;
+}
+#img-logo-navbar {
+    display: none;
+}
+.bord {
+    border: 2px solid blue;
+}
+.bot-bord {
+    border-bottom: 2px solid blue;
+}
+.logo-header{
+    display: flex;
+    height: 100px;
+    justify-content: end;
+    align-items: center;
+    background-image: rgb(85, 107, 248);
+    padding-right: 20px;
+}
+.logo-header img {
+    width: 800px;
+    height: 100px;    
+    min-width: 800px;
+}
+.navbar img {
+    padding: 3px;
+}
+.container {
+    height: 100%;
+    margin: 10px;
+}
+.container-contatti {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container-contatti h1 {
+    text-align: center;
+}
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    padding: 12px;
+}
+.card-oriz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.card-testo {
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 7%;
+    background-color: aqua;
+
+}
+.card-testo p {
+    text-align: center;
+}
+
+.navbar {
+    background-color: lightblue;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar img {
+    height: 60px;
+    width: 60px;
+}
+
+.navbar-menu {
+    display: flex;
+    padding: 2px;
+    gap: 6px;
+    height: 100%;
+    
+}
+.navbar-menu  a {
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-size: 17px;
+}   
+.navbar-menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.navbar-menu a:active {
+    background-color: #04AA6D;
+    color: white;
+}
+.dropdown {
+   display: flex;
+    display: inline-block;
+    margin-top: 15px;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: 15px; 
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:active .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    background-color: lightblue;
+    color: black;
+    display: block;
+}
+  
+.img-logo{
+    width: 100%;
+}
+.spazio{
+    height: 65px;
+}
+.formform {
+    padding: 4px;
+    width: 60%;
+}
+.etichette {
+    text-align: center;
+    width: 100%;
+}
+.submit-button {
+    width: 33%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 440px) {
+    body {
+      background-color: lightgreen;
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+    #img-logo-navbar {
+        display: block;
+    }
+    .navbar-menu a:hover {
+        transform: scale(1.5);
+    }
+    .dropdown > a {
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: lavender;
+    }
+    
+    
+    
+    .card-oriz {
+        justify-content: space-around;
+    }
+   
+    .card-testo {
+        width: 50%;
+    }
+    .container-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .formform {
+        width: 60%;
+    }
+    .etichette {
+        width: 20%;
+    }
+    .submit-button {
+        margin-left: 150px;
+    }
+    .card-reverse {
+        flex-direction: row-reverse;
+    }
+}
