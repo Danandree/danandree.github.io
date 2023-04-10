@@ -7,27 +7,40 @@
     <link rel="stylesheet" href="assets/css/styles.css"/>
 </head>
 <body>
-    <header class="logo-header" >
+    <!-- HEADER - LOGO -->
+    <header class="banner-header" >
         <h1>Daniele Andreetta</h1>
+        <a href="index.html" class="logo"><img src="assets/img/logo2.svg" alt="img logo"/></a>
     </header>
+    <!-- NAVBAR -->
     <div class="navbar">
         <div class="navbar-menu">
             <a href="#">Home</a>
             <a href="progetti.html">Progetti</a>
             <a href="#titolo-contattami">Contatti</a>
+        <!-- DROPDOWN MENU -->
             <div class="dropdown">
-                <a class="dropdownbtn" id="a1">Social</a>
+                <a class="dropdownbtn" href="#social">Social</a>
                 <div class="dropdown-content">
                     <a href="https://github.com/Danandree">Github</a>
                     <a href="#">Linkedin</a>
-                    <a href="#">Facebook</a>
+                    <a href="http://www.facebook.com">Facebook</a>
                 </div>
             </div>
+        <!-- SOCIAL - LOGO -->
+            <div class="social-logo">
+                <a href="https://github.com/Danandree"><img src="assets/img/github-mark.svg"/></a>
+                <!--<a href="http://www.facebook.com"><img src="assets/img/logo-facebook.png"/></a>
+                <a href="http://www.linkedin.com"><img src="assets/img/linkedin-logo.svg"/></a>-->
+            </div>
         </div>
-        <a href="#"><img id="img-logo-navbar" src="assets/img/logo.png" alt="IMG LOGO"/></a>
+        <a href="#" class="logo"><img id="img-logo-navbar" src="assets/img/logo2.svg" alt="IMG LOGO"/></a>
     </div>
+    <!-- CONTAINER -->
     <div class="container">
-        <div class="card-oriz bot-bord">
+    <!-- CARD-ORIZZONTALI -->
+        <!-- CARD 1 -->
+        <div class="card-orizzontale card-header">
             <div class="card-testo">
                 <h2>Daniele Andreetta</h2>
                 <p>Appassionato da sempre di tecnologia</p>
@@ -36,30 +49,34 @@
             </div>
             <img class="card-img" src="assets/img/saldatura-stagno.webp" alt="immagine home"/>
         </div>
-        <div class="card-reverse card-oriz bot-bord">
+        <!-- CARD 2 -->
+        <div class="card-reverse card-orizzontale bord">
             <div class="card-testo">
-                <h2>Bio</h2>
-                <p>Appassionato da sempre di tecnologia cerco di rimanere sempre al passo.</p>
-                <p>Esperto di volo con drone in FPV.</p>
-                <p>Maker di oggettistica varia stampata in 3D</p>
-                <p></p>
-            </div>
-            <img src="assets/img/saldatura-stagno.webp" alt="LOGO" class="bord"/>
-        </div>
-        <div class="card-oriz bot-bord">
-            <div class="card-testo">
-                <h2>Skill</h2>
+                <h2>Lavori</h2>
                 <ul>
-                    <li>progettazione e realizzazione piccoli circuiti elettronici</li>
-                    <li>progettazione e realizzazione di siti web con html e css</li>
-                    <li>progettazione e realizzazione modelli 3d per stampante</li>
-                    <li>realizzazioni stampe 3D in più materiali (PETG, TPU)</li>
-                    <li>costruzione e consigli per droni FPV (all around)</li>
+                    <li>Attacco forocamera drone FPV</li>
+                    <li>BOT Discord</li>
+                    <li>Maker di oggettistica varia stampata in 3D</li>
                 </ul>
             </div>
             <img src="assets/img/saldatura-stagno.webp" alt="LOGO" class="bord"/>
         </div>
-        <div class="card-reverse card-oriz bot-bord">
+        <!-- CARD 3 -->
+        <div class="card-orizzontale bord">
+            <div class="card-testo">
+                <h2>Skill</h2>
+                <ul>
+                    <li>Progettazione e realizzazione piccoli circuiti elettronici</li>
+                    <li>Progettazione e realizzazione di siti web con html e css</li>
+                    <li>Progettazione e realizzazione modelli 3D per stampante</li>
+                    <li>Realizzazioni stampe 3D in più materiali</li>
+                    <li>Costruzione e consigli per droni FPV</li>
+                </ul>
+            </div>
+            <img src="assets/img/saldatura-stagno.webp" alt="LOGO" class="bord"/>
+        </div>
+        <!-- CARD 4 -->
+        <div class="card-reverse card-orizzontale bord">
             <div class="card-testo">
                 <h2 id="hsoftskill">Soft Skill</h2>
                 <ul>
@@ -73,28 +90,35 @@
             <img src="assets/img/saldatura-stagno.webp" alt="LOGO" class="bord"/>
         </div>
     </div>
-    <div class="container-contatti">
+    <!-- CONTAINER CONTATTI -->
+    <div class="container-contatti bord">
         <h2>Qualche proposta?</h2>
         <h2 id="titolo-contattami">Contattami</h2>
-        <form class="container-form">
+        <form class="container-form bord">
             <label class="formform etichette" for="nome">Nome:</label>
-            <input class="formform" type="text" id="nome" name="nome">
+            <input class="formform" type="text" id="nome" name="nome" required>
             <label class="formform etichette" for="cognome">Cognome:</label>
-            <input class="formform" type="text" id="cognome" name="cognome">
+            <input class="formform" type="text" id="cognome" name="cognome" required>
             <label class="formform etichette" for="email">Email:</label>
-            <input class="formform" type="email" id="email" name="email">
+            <input class="formform" type="email" id="email" name="email" required>
             <input class="submit-button" type="submit" value="Contatta"/>
         </form>
-        <h2><a href="mailto:danieleandree91@gmail.com">Oppure scrivi una mail</a></h2>
     </div>
+    <!-- FOOTER -->
     <div class="footer">
         <p>Daniele Andreetta</p>
         <div class="loghi-social">
             <a href="https://github.com/Danandree"><img src="assets/img/github-mark.svg" alt="Github"/></a>
-            <img src="#" alt="Linkedin"/>
-            <img src="#" alt="Facebook"/>
+            <!--<a href="http://www.facebook.com"><img src="assets/img/logo-facebook.png"/></a>
+            <a href="http://www.linkedin.com"><img src="assets/img/linkedin-logo.svg"/></a>-->
         </div>
-        <p>Ultimo update:</p>
+    </div>
+    <div>
+        <div id="ultimoAggiornamento"></div>
+        <script>
+            var date = document.lastModified;
+            document.getElementById("ultimoAggiornamento").innerHTML = "Ultimo aggiornamento: " + date;
+         </script>
     </div>
 </body>
 </html>
