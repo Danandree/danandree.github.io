@@ -13,7 +13,8 @@ body {
     font-size: 16px;
 }
 img {
-    height: 200px;
+    max-width: 400px;
+    width: 100%;
 }
 
 /* HEADER */
@@ -27,7 +28,7 @@ img {
     height: 100px;
     justify-content: space-between;
     align-items: center;
-    background-image: url("../img/technology-1.jpg");
+    background-image: url("../img/technology-1-mod.jpg");
     padding-right: 2px;
     color: lightgray;
 }
@@ -108,7 +109,6 @@ img {
     margin: 10px;
     gap: 2rem;
 }
-
 .card-orizzontale {
     display: flex;
     flex-wrap: wrap;
@@ -133,9 +133,7 @@ img {
 .img-logo{
     width: 100%;
 }
-.spazio{
-    height: 65px;
-}
+
 /* CONTAINER CONTATTI */
 .container-contatti {
     display: flex;
@@ -206,13 +204,28 @@ img {
         font-size: 22px;
         background-color :orange;
     }
+    /* BANNER HEADER */
+    .banner-header {
+        height: 200px;
+    }
+    .banner-header img {
+        max-height: 150px;
+        opacity: 0.8;
+    }
     /* NAVBAR */
     .navbar {
-        justify-content: space-between;
+        height: 75px;
+        justify-content: start;
         align-items: center;
     }
     .navbar-menu{
-        width: auto;
+        width: 100%;
+        justify-content: start;
+        align-items: center;
+        gap: 2rem;
+    }
+    .navbar a {
+        font-size: 26px;
     }
     /* DROPDOWN */
     .dropdown{
@@ -223,7 +236,6 @@ img {
         text-align: center;
         padding: 15px 16px;
         text-decoration: none;
-        font-size: 17px;
     }
     .dropdown > a:hover {
         background-color: #ddd;
@@ -257,18 +269,23 @@ img {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 1rem;
     }
     .card-orizzontale {
-        width: 28%;
+        width: 29vw;
         align-items: end;
     }
-    .card-orizzontale > img {
-        max-width:  100%;
-        max-height: 100%;
+    .card-orizzontale img {
+        max-width: fit-content;
+        width: 100%;
     }
     .card-header {
         width: 100%;
         align-items: center;
+    }
+    .card-header img {
+        height: 300px;
+        width: 400px;
     }
     .card-header div {
         width: 45%;
