@@ -4,20 +4,21 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Sito personale</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo2.svg"/>
     <link rel="stylesheet" href="assets/css/styles.css"/>
 </head>
 <body>
     <!-- HEADER - LOGO -->
     <header class="banner-header" >
         <h1>Daniele Andreetta</h1>
-        <a href="index.html" class="logo"><img src="assets/img/logo-mod.png" alt="img logo"/></a>
+        <a href="index.html" class="logo"><img src="assets/img/logo-mod-arancio.png" alt="img logo"/></a>
     </header>
     <!-- NAVBAR -->
     <div class="navbar">
         <div class="navbar-menu">
             <a href="#">Home</a>
-            <a href="#titolo-contattami">Contatti</a>
-            <a href="progetti.html">Lavori</a>
+            <a href="contatti.html">Contatti</a>
+            <a href="lavori.html">Lavori</a>
         <!-- DROPDOWN MENU -->
             <div class="dropdown">
                 <a class="dropdownbtn" href="#social">Social</a>
@@ -66,9 +67,9 @@
             <div class="card-testo">
                 <h2>Skills</h2>
                 <ul>
-                    <li>Progettazione e realizzazione piccoli circuiti elettronici</li>
                     <li>Progettazione e realizzazione di siti web con html e css</li>
                     <li>Progettazione e realizzazione modelli 3D per stampante</li>
+                    <li>Programmazione bot per Discord</li>
                     <li>Realizzazioni stampe 3D in più materiali</li>
                     <li>Costruzione e consigli droni FPV</li>
                 </ul>
@@ -90,35 +91,21 @@
             <img src="assets/img/wallpaper-soft-skills-mod.jpg" alt="LOGO" class="bord"/>
         </div>
     </div>
-    <!-- CONTAINER CONTATTI -->
-    <div class="container-contatti bord">
-        <h2>Qualche proposta?</h2>
-        <h2 id="titolo-contattami">Contattami</h2>
-        <form class="container-form bord">
-            <label class="formform etichette" for="nome">Nome:</label>
-            <input class="formform" type="text" id="nome" name="nome" required>
-            <label class="formform etichette" for="cognome">Cognome:</label>
-            <input class="formform" type="text" id="cognome" name="cognome" required>
-            <label class="formform etichette" for="email">Email:</label>
-            <input class="formform" type="email" id="email" name="email" required>
-            <input class="submit-button" type="submit" value="Contatta"/>
-        </form>
-    </div>
     <!-- FOOTER -->
     <div class="footer">
         <p>Daniele Andreetta</p>
+        <div>
+            <div id="ultimoAggiornamento"></div>
+            <script>
+                var date = document.lastModified;
+                document.getElementById("ultimoAggiornamento").innerHTML = "Ultimo aggiornamento: " + date;
+             </script>
+        </div>
         <div class="loghi-social">
             <a href="https://github.com/Danandree"><img src="assets/img/github-mark.svg" alt="Github"/></a>
             <!--<a href="http://www.facebook.com"><img src="assets/img/logo-facebook.png"/></a>
             <a href="http://www.linkedin.com"><img src="assets/img/linkedin-logo.svg"/></a>-->
         </div>
-    </div>
-    <div>
-        <div id="ultimoAggiornamento"></div>
-        <script>
-            var date = document.lastModified;
-            document.getElementById("ultimoAggiornamento").innerHTML = "Ultimo aggiornamento: " + date;
-         </script>
     </div>
 </body>
 </html>

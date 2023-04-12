@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Sito personale</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo2.svg"/>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+    <!-- HEADER - LOGO -->
+    <header class="banner-header" >
+        <h1>Daniele Andreetta</h1>
+        <a href="index.html" class="logo"><img src="assets/img/logo-mod-arancio.png" alt="img logo"/></a>
+    </header>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="navbar-menu">
+            <a href="index.html">Home</a>
+            <a href="#">Contatti</a>
+            <a href="lavori.html">Lavori</a>
+        <!-- DROPDOWN MENU -->
+            <div class="dropdown">
+                <a class="dropdownbtn" href="#social">Social</a>
+                <div class="dropdown-content">
+                    <a href="https://github.com/Danandree">Github</a>
+                    <a href="#">Linkedin</a>
+                    <a href="http://www.facebook.com">Facebook</a>
+                </div>
+            </div>
+        <!-- SOCIAL - LOGO -->
+            <div class="social-logo">
+                <a href="https://github.com/Danandree"><img src="assets/img/github-mark.svg"/></a>
+                <!--<a href="http://www.facebook.com"><img src="assets/img/logo-facebook.png"/></a>
+                <a href="http://www.linkedin.com"><img src="assets/img/linkedin-logo.svg"/></a>-->
+            </div>
+        </div>
+        <a href="#" class="logo"><img id="img-logo-navbar" src="assets/img/logo2.svg" alt="IMG LOGO"/></a>
+    </div>
+    <!-- CONTAINER CONTATTI -->
+    <div class="container-contatti bord">
+        <h2>Qualche proposta?</h2>
+        <h2 id="titolo-contattami">Contattami</h2>
+        <form class="container-form bord">
+            <label class="formform etichette" for="nome">Nome:</label>
+            <input class="formform" type="text" id="nome" name="nome" required>
+            <label class="formform etichette" for="cognome">Cognome:</label>
+            <input class="formform" type="text" id="cognome" name="cognome" required>
+            <label class="formform etichette" for="email">Email:</label>
+            <input class="formform" type="email" id="email" name="email" required>
+            <input class="submit-button" type="submit" value="Contatta"/>
+        </form>
+    </div>
+</body>
+</html>
