@@ -1,6 +1,10 @@
 /* GLOBAL */
 :root {
-    --navbar-hight: 50px;
+    --card-color: rgb(173, 216, 230, 0.6);
+    --navbar-color: rgb(173, 216, 230, 0.9);
+    --hover-color: #ddd;
+    --active-color: #003aa6;
+
 }
 @font-face {
     font-family: 'forum';
@@ -11,18 +15,26 @@
 }
 body {
     font-family: "forum";
-    font-size: 16px;
     background-image: url("../img/sfondo-1.png");
+}
+a {
+    color: black;
 }
 p, li {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 img {
     max-width: 400px;
     width: 100%;
 }
-
+h2{
+    font-size: 30px;
+}
+label {
+    font-size: 24px;
+    font-weight: bold;
+}
 /* HEADER */
 #img-logo-navbar {
     display: none;
@@ -32,13 +44,14 @@ img {
 .banner-header{
     display: flex;
     height: 100px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     /* background-image: url("../img/technology-1-mod.jpg"); */
     padding-right: 2px;
     color: lightgray;
 }
 .banner-header > h1 {
+    display: none;
     background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -46,16 +59,16 @@ img {
     animation: onda 2000ms ease alternate infinite;
     transition: all 0.4s ease;
     -webkit-text-stroke: 1px #a6fce5;
+    font-size: 62px;
 }
 
 .banner-header img {
     max-height: 85px;
     opacity: 0.8;
 }
-
 /* NAVBAR */
 .navbar {
-    background-color: lightblue;
+    background-color: var(--navbar-color);
     position: sticky;
     top: 0;
     width: 100%;
@@ -70,11 +83,13 @@ img {
     height: 60px;
     width: 60px;
     padding: 3px;
+    margin-top: 5px;
 }
 
 .navbar-menu {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 2px;
     height: 100%;
     width: 100%;
@@ -84,15 +99,14 @@ img {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 22px;
-   
-    /* Aggiungere  BOLD */
+    color: black;
 }   
 .navbar-menu > a:hover {
-    background-color: #ddd;
+    background-color: var(--hover-color);
     color: black;
 }
 .navbar-menu > a:active {
-    background-color: #04AA6D;
+    background-color:  var(--active-color);
     color: white;
 }
 /* DROPDOWN */
@@ -109,82 +123,13 @@ img {
     max-width: 30px;
     max-height: 30px;
 }
-/* CONTAINER */
-.container {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    gap: 2rem;
-    line-height: 1.6;
-}
-.card-orizzontale {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    gap: 1rem;
-    /*BACKGROUND COLOR ORIZONTAL CARD*/
-    background-color: rgb(97, 183, 217,0.7);
-}
-
-.card-testo {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.card-testo p {
-    text-align: center;
-}
-.img-logo{
-    width: 100%;
-}
-
-/* CONTAINER CONTATTI */
-.container-contatti {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.container-contatti h2 a{
-    text-align: center;
-    text-decoration: none;
-}
-.container-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 700px;
-    padding: 12px;
-}
-.formform {
-    padding: 4px;
-    width: 60%;
-}
-.etichette {
-    text-align: center;
-    width: 100%;
-}
-.submit-button {
-    width: 33%;
-    justify-content: center;
-    margin-top: 10px;
-}
 /* FOOTER */
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 .loghi-social{
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -193,6 +138,8 @@ img {
 .loghi-social img {
     max-height: 20px;
 }
+
+
 
 @media screen and (min-width: 440px){
     body{
@@ -211,17 +158,24 @@ img {
 }
 
 @media screen and (min-width: 811px){
-    body{
-        font-size: 22px;
+
+    h2 {
+        font-size: 52px;
+    }
+    p, li {
+        font-size: 20px;
     }
     /* BANNER HEADER */
     .banner-header {
         height: 200px;
-        
+        justify-content: space-between;
+        padding: 0 2rem;
     }
     .banner-header img {
         max-height: 150px;
-        opacity: 0.8;
+    }
+    .banner-header h1 {
+        display: block;
     }
     /* NAVBAR */
     .navbar {
@@ -257,10 +211,11 @@ img {
     }
     .dropdown-content{
         display: none;
+        background-color: var(--card-color);
         position: absolute;
         z-index: 1;
         margin-left: -18px;
-
+        margin-top: 8px;
     }
     
     
@@ -269,8 +224,6 @@ img {
     }
     
     .dropdown-content a {
-        background-color: lightblue;
-        color: black;
         display: block;
     }
     .dropdown-content a:hover {
@@ -279,33 +232,14 @@ img {
     .social-logo {
         display: none;
     }
-    /* CONTAINER */
-    .container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
-    .card-orizzontale {
-        width: 29vw;
-        align-items: end;
-    }
-    .card-orizzontale img {
-        max-width: fit-content;
-        width: 100%;
-    }
-    .card-header {
-        width: 100%;
-        align-items: center;
-    }
-    .card-header img {
-        height: 300px;
-        width: 400px;
-    }
-    .card-header div {
-        width: 45%;
+}
+
+@media screen and (min-width: 1921px){
+    body {
+        background-image: url("../img/sfondo-1-4k.png");
     }
 }
+
 @keyframes onda {
     0% {
         background-position: 0 0;
