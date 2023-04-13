@@ -52,7 +52,7 @@
             <img class="card-img" src="assets/img/saldatura-stagno.webp" alt="immagine home"/>
         </div>
         <!-- CARD 2 -->
-        <div class="card-reverse card-orizzontale bord">
+        <div class="card-reverse card-orizzontale">
             <div class="card-testo">
                 <h2>Lavori</h2>
                 <ul>
@@ -63,10 +63,10 @@
                     <li>Maker di oggettistica varia stampata in 3D</li>
                 </ul>
             </div>
-            <img src="assets/img/lavori-mod.jpg" alt="LOGO" class="bord"/>
+            <img src="assets/img/lavori-mod.jpg" alt="LOGO"/>
         </div>
         <!-- CARD 3 -->
-        <div class="card-orizzontale bord">
+        <div class="card-orizzontale">
             <div class="card-testo">
                 <h2>Skills</h2>
                 <ul>
@@ -77,12 +77,12 @@
                     <li>Costruzione e consigli droni FPV</li>
                 </ul>
             </div>
-            <img src="assets/img/wallpaper-skills-mod.jpg" alt="LOGO" class="bord"/>
+            <img src="assets/img/wallpaper-skills-mod.jpg" alt="LOGO"/>
         </div>
         <!-- CARD 4 -->
-        <div class="card-reverse card-orizzontale bord">
+        <div class="card-reverse card-orizzontale">
             <div class="card-testo">
-                <h2 id="hsoftskill">Soft Skills</h2>
+                <h2>Soft Skills</h2>
                 <ul>
                     <li>Problem solving</li>
                     <li>Approccio analitico</li>
@@ -91,24 +91,22 @@
                     <li>Predisposizione all'apprendimento</li>
                 </ul>
             </div>
-            <img src="assets/img/wallpaper-soft-skills-mod.jpg" alt="LOGO" class="bord"/>
+            <img src="assets/img/wallpaper-soft-skills-mod.jpg" alt="LOGO"/>
         </div>
     </div>
     <!-- FOOTER -->
     <div class="footer">
         <p>Daniele Andreetta</p>
-        <div>
-            <div id="ultimoAggiornamento"></div>
-            <script>
-                var date = document.lastModified;
-                document.getElementById("ultimoAggiornamento").innerHTML = "Ultimo aggiornamento: " + date;
-             </script>
-        </div>
-        <div class="loghi-social">
-            <a href="https://github.com/Danandree"><img src="assets/img/github-mark.svg" alt="Github"/></a>
-            <!--<a href="http://www.facebook.com"><img src="assets/img/logo-facebook.png"/></a>
-            <a href="http://www.linkedin.com"><img src="assets/img/linkedin-logo.svg"/></a>-->
-        </div>
+        <div id="ultimoAggiornamento"></div>
+        <script>
+            var date = document.lastModified;
+            document.getElementById("ultimoAggiornamento").innerHTML = "Ultimo aggiornamento: " + date;
+        </script>
+        <!--<div class="loghi-social">
+            <a href="https://github.com/"><img src="assets/img/github-mark.svg" alt="Github"/></a>
+            <a href="http://www.facebook.com"><img src="assets/img/logo-facebook.png"/></a>
+            <a href="http://www.linkedin.com"><img src="assets/img/linkedin-logo.svg"/></a>
+        </div>-->
     </div>
 </body>
 </html>

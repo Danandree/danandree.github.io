@@ -24,17 +24,11 @@ p, li {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
-img {
-    max-width: 400px;
-    width: 100%;
-}
+
 h2{
     font-size: 30px;
 }
-label {
-    font-size: 24px;
-    font-weight: bold;
-}
+
 /* HEADER */
 #img-logo-navbar {
     display: none;
@@ -46,10 +40,10 @@ label {
     height: 100px;
     justify-content: center;
     align-items: center;
-    /* background-image: url("../img/technology-1-mod.jpg"); */
     padding-right: 2px;
     color: lightgray;
 }
+
 .banner-header > h1 {
     display: none;
     background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%);
@@ -66,6 +60,7 @@ label {
     max-height: 85px;
     opacity: 0.8;
 }
+
 /* NAVBAR */
 .navbar {
     background-color: var(--navbar-color);
@@ -94,21 +89,25 @@ label {
     height: 100%;
     width: 100%;
 }
+
 .navbar-menu > a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 22px;
     color: black;
-}   
+}  
+
 .navbar-menu > a:hover {
     background-color: var(--hover-color);
     color: black;
 }
+
 .navbar-menu > a:active {
     background-color:  var(--active-color);
     color: white;
 }
+
 /* DROPDOWN */
 .dropdown {
     display: none;
@@ -119,30 +118,34 @@ label {
     justify-content: center;
     align-items: center;
 }
+
 .social-logo img {
     max-width: 30px;
     max-height: 30px;
 }
+
 /* FOOTER */
 .footer {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--navbar-color);
+    padding: 2px 1rem;
 }
-.loghi-social{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
+.footer p{
+    font-size: 14px;
 }
-.loghi-social img {
-    max-height: 20px;
-}
-
 
 
 @media screen and (min-width: 440px){
     body{
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    p, li {
         font-size: 18px;
     }
     /* NAVBAR*/
@@ -162,21 +165,26 @@ label {
     h2 {
         font-size: 52px;
     }
+
     p, li {
         font-size: 20px;
     }
+
     /* BANNER HEADER */
     .banner-header {
         height: 200px;
         justify-content: space-between;
         padding: 0 2rem;
     }
+
     .banner-header img {
         max-height: 150px;
     }
+
     .banner-header h1 {
         display: block;
     }
+
     /* NAVBAR */
     .navbar {
         height: 75px;
@@ -184,40 +192,46 @@ label {
         align-items: center;
         padding-left: 50px;
     }
+
     .navbar-menu{
         width: 100%;
         justify-content: start;
         align-items: center;
         gap: 2rem;
     }
+
     .navbar a {
         font-size: 26px;
     }
+
     .navbar a:hover {
         transform: scale(1.3);
     }
+
     /* DROPDOWN */
     .dropdown{
         display: block;
     }
+
     .dropdown  a {
         display: block;
         text-align: center;
         padding: 15px 16px;
         text-decoration: none;
     }
+
     .dropdown > a:hover {
         background-color: #ddd;
     }
+
     .dropdown-content{
         display: none;
-        background-color: var(--card-color);
+        background-color: var(--navbar-color);
         position: absolute;
         z-index: 1;
         margin-left: -18px;
         margin-top: 8px;
     }
-    
     
     .dropdown:hover .dropdown-content {
         display: block;
@@ -226,9 +240,11 @@ label {
     .dropdown-content a {
         display: block;
     }
+
     .dropdown-content a:hover {
         background-color: #ddd;
     }
+
     .social-logo {
         display: none;
     }
@@ -249,9 +265,7 @@ label {
     }
     
 }
-@keyframes spostamento-oggetti-navbar {
 
-}
 #ultimoAggiornamento {
     font-size: 12px;
 }

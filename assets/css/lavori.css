@@ -1,0 +1,12 @@
+.navbar-lavori {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+}
+.navbar-lavori img {
+    width: 100%;
+    max-width: 400px;
+}

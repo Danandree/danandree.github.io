@@ -7,6 +7,26 @@
     <link rel="icon" type="image/x-icon" href="assets/img/logo2.svg"/>
     <link rel="stylesheet" href="assets/css/styles.css"/>
     <link rel="stylesheet" href="assets/css/contatti.css"/>
+    <!-- EMAILJS SCRIPT -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('ZrPlbdzShu1cC5p-q');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('service_9u3weid', 'template_woa39wh', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
     <!-- HEADER - LOGO -->
@@ -39,23 +59,41 @@
         <a href="#" class="logo"><img id="img-logo-navbar" src="assets/img/logo2.svg" alt="IMG LOGO"/></a>
     </div>
     <!-- CONTAINER CONTATTI -->
-    <div class="container-contatti bord">
+    <div class="container-contatti">
         <h2>Qualche proposta?</h2>
         <h2 id="titolo-contattami">Contattami</h2>
-        <form class="container-form bord">
+        <form class="container-form" id="contact-form">
             <label class="formform etichette" for="nome">Nome:</label>
             <input class="formform" type="text" id="nome" name="nome" required>
             <label class="formform etichette" for="cognome">Cognome:</label>
             <input class="formform" type="text" id="cognome" name="cognome" required>
             <label class="formform etichette" for="email">Email:</label>
             <input class="formform" type="email" id="email" name="email" required>
-            <input class="submit-button" type="submit" value="Contatta"/>
+            <label class="formform etichette textarea-label" for="note">Messaggio:</label>
+            <textarea class="formform" rows="5" cols="4" id="note" name="note"></textarea>
+            <input class="submit-button" onclick="send()" type="submit" value="Invia"/>
         </form>
     </div>
     <div class="immagini-riempitive">
         <div><img id="img1" src="assets/img/pc-e-doc-stilizzato.jpg"/></div>
         <div><img src="assets/img/technology-1.jpg"/></div>
-        <div><img src="assets/img/stampante3d-stilizzata-mod.jpg"/></div>
+        <div><img id="img3" src="assets/img/stampante3d-stilizzata-mod.jpg"/></div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+        <div>
+            <div id="ultimoAggiornamento"></div>
+            <script>
+                var date = document.lastModified;
+                document.getElementById("ultimoAggiornamento").innerHTML = "Ultimo aggiornamento: " + date;
+             </script>
+        </div>
+        <p>Daniele Andreetta</p>
+        <!--<div class="loghi-social">
+            <a href="https://github.com/"><img src="assets/img/github-mark.svg" alt="Github"/></a>
+            <a href="http://www.facebook.com"><img src="assets/img/logo-facebook.png"/></a>
+            <a href="http://www.linkedin.com"><img src="assets/img/linkedin-logo.svg"/></a>
+        </div>-->
     </div>
 </body>
 </html>

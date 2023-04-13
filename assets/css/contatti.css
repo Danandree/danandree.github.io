@@ -4,13 +4,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 1rem 0;
+    margin: 1rem 5vw;
+    background-color:  rgb(173, 216, 230, 0.6);
 }
+
 .container-contatti h2 a{
     text-align: center;
     text-decoration: none;
 }
+
 .container-form {
     display: flex;
     flex-direction: column;
@@ -19,53 +21,111 @@
     max-width: 700px;
     padding: 12px;
 }
+
 .formform {
     padding: 4px;
     width: 60%;
 }
+
 .etichette {
     text-align: center;
     width: 100%;
+    font-size: 16px;
+    font-weight: bold;
 }
+
+textarea {
+    resize: none;
+}
+
+.textarea-label {
+    justify-content: start;
+}
+
 .submit-button {
     width: 33%;
     justify-content: center;
     margin-top: 10px;
 }
+
+.immagini-riempitive {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
+}
+
 .immagini-riempitive img {
     display: none;
 }
+
 #img1 {
     display: block;
+    width: 100%;
 }
 
 @media screen and (min-width:440px) {
-    .immagini-riempitive img {
+    input, textarea {
+        font-size: 14px;
+    }
+
+    .immagini-riempitive {
+        gap: 0.5rem;
+    }
+
+    .immagini-riempitive img{
         display: block;
+        width: 100%;
+    }
+
+    .etichette {
+        font-size: 20px;
+    }
+
+    #img3 {
+        display: none;
+    }
+
+    .submit-button {
+        height: 30px;
+        font-size: 18px;
     }
 }
 
 @media screen and (min-width: 811px){
+    input, textarea {
+        font-size: 16px;
+    }
+
     .container-form {
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: start;
     }
+
     .formform {
         width: 65%;
         margin: 1rem 0;
     }
+
     .etichette {
         width: 25%;
+        font-size: 24px;
     }
+
     .submit-button {
         margin-left: 45%;
         height: 35px;
-        font-size: 22px;
+        font-size: 20px;
     }
+
     .immagini-riempitive {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         gap: 1rem;
+    }
+    
+    #img3 {
+        display: block;
     }
 }
