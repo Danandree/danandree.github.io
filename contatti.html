@@ -31,25 +31,23 @@
 <body>
     <!-- HEADER - LOGO -->
     <header class="banner-header" >
-        <h1>Daniele Andreetta</h1>
+        <!-- <h1>Daniele Andreetta</h1> -->
         <a href="index.html" class="logo"><img src="assets/img/logo-mod-arancio.png" alt="img logo"/></a>
     </header>
     <!-- NAVBAR -->
     <div class="navbar">
         <div class="navbar-menu">
-            <a href="index.html">Home</a>
-            <a href="#">Contatti</a>
+            <a href="#">Home</a>
+            <a href="contatti.html">Contatti</a>
             <a href="lavori.html">Lavori</a>
-        <!-- DROPDOWN MENU -->
+            <!-- DROPDOWN MENU -->
             <div class="dropdown">
                 <a class="dropdownbtn" href="#social">Social</a>
                 <div class="dropdown-content">
                     <a href="https://github.com/Danandree">Github</a>
-                    <a href="#">Linkedin</a>
-                    <a href="http://www.facebook.com">Facebook</a>
                 </div>
             </div>
-        <!-- SOCIAL - LOGO -->
+            <!-- SOCIAL - LOGO -->
             <div class="social-logo">
                 <a href="https://github.com/Danandree"><img src="assets/img/github-mark.svg"/></a>
                 <!--<a href="http://www.facebook.com"><img src="assets/img/logo-facebook.png"/></a>
@@ -70,9 +68,13 @@
             <label class="formform etichette" for="email">Email:</label>
             <input class="formform" type="email" id="email" name="email" required>
             <label class="formform etichette textarea-label" for="note">Messaggio:</label>
-            <textarea class="formform" rows="5" cols="4" id="note" name="note"></textarea>
-            <input class="submit-button" onclick="send()" type="submit" value="Invia"/>
+            <textarea class="formform" rows="5" cols="4" maxlength="500" id="note" name="note"></textarea>
+            <input class="submit-button"  type="submit" value="Invia"/>
         </form>
+        <div class="messaggio-grazie">
+            <h2>Grazie dell'offerta</h2>
+            <p>Sarai ricontattato il porima possibile!</p>
+        </div>
     </div>
     <div class="immagini-riempitive">
         <div><img id="img1" src="assets/img/pc-e-doc-stilizzato.jpg"/></div>
@@ -81,14 +83,12 @@
     </div>
     <!-- FOOTER -->
     <div class="footer">
-        <div>
-            <div id="ultimoAggiornamento"></div>
-            <script>
-                var date = document.lastModified;
-                document.getElementById("ultimoAggiornamento").innerHTML = "Ultimo aggiornamento: " + date;
-             </script>
-        </div>
         <p>Daniele Andreetta</p>
+        <div id="ultimoAggiornamento"></div>
+        <script>
+            var date = document.lastModified;
+            document.getElementById("ultimoAggiornamento").innerHTML = "Ultimo aggiornamento: " + date;
+        </script>
         <!--<div class="loghi-social">
             <a href="https://github.com/"><img src="assets/img/github-mark.svg" alt="Github"/></a>
             <a href="http://www.facebook.com"><img src="assets/img/logo-facebook.png"/></a>

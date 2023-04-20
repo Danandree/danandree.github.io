@@ -11,25 +11,23 @@
 <body>
     <!-- HEADER - LOGO -->
     <header class="banner-header" >
-        <h1>Daniele Andreetta</h1>
+        <!-- <h1>Daniele Andreetta</h1> -->
         <a href="index.html" class="logo"><img src="assets/img/logo-mod-arancio.png" alt="img logo"/></a>
     </header>
     <!-- NAVBAR -->
     <div class="navbar">
         <div class="navbar-menu">
-            <a href="index.html">Home</a>
+            <a href="#">Home</a>
             <a href="contatti.html">Contatti</a>
             <a href="lavori.html">Lavori</a>
-        <!-- DROPDOWN MENU -->
+            <!-- DROPDOWN MENU -->
             <div class="dropdown">
                 <a class="dropdownbtn" href="#social">Social</a>
                 <div class="dropdown-content">
                     <a href="https://github.com/Danandree">Github</a>
-                    <a href="#">Linkedin</a>
-                    <a href="http://www.facebook.com">Facebook</a>
                 </div>
             </div>
-        <!-- SOCIAL - LOGO -->
+            <!-- SOCIAL - LOGO -->
             <div class="social-logo">
                 <a href="https://github.com/Danandree"><img src="assets/img/github-mark.svg"/></a>
                 <!--<a href="http://www.facebook.com"><img src="assets/img/logo-facebook.png"/></a>
@@ -43,6 +41,23 @@
         <img src="assets/img/technology-1.jpg">
         <img src="assets/img/lavori-mod.jpg">
     </div>
-    <div class="container"></div>
+    <!-- CONTAINER -->
+    <div class="container">
+        
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>Daniele Andreetta</p>
+        <div id="ultimoAggiornamento"></div>
+        <script>
+            var date = document.lastModified;
+            document.getElementById("ultimoAggiornamento").innerHTML = "Ultimo aggiornamento: " + date;
+        </script>
+        <!--<div class="loghi-social">
+            <a href="https://github.com/"><img src="assets/img/github-mark.svg" alt="Github"/></a>
+            <a href="http://www.facebook.com"><img src="assets/img/logo-facebook.png"/></a>
+            <a href="http://www.linkedin.com"><img src="assets/img/linkedin-logo.svg"/></a>
+        </div>-->
+    </div>
 </body>
 </html>
