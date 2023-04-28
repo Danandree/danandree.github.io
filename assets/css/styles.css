@@ -257,12 +257,6 @@ h2{
     }
 }
 
-@media screen and (min-width: 1921px){
-    body {
-        background-image: url("../img/sfondo-1-4k.png");
-    }
-}
-
 @keyframes onda {
     0% {
         background-position: 0 0;
