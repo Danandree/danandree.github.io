@@ -4,6 +4,7 @@
     --navbar-color: rgb(173, 216, 230, 0.9);
     --hover-color: #ddd;
     --active-color: #003aa6;
+    --colore-ombra: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 @font-face {
@@ -19,7 +20,6 @@ html {
 }
 body {
     font-family: "forum";
-    /* background-image: url("../img/sfondo-1.png"); */
     background-image: url("../img/sfondo-punti-mod-contrario.png");    
 }
    
@@ -64,7 +64,6 @@ h2{
 
 .banner-header img {
     max-height: 85px;
-    opacity: 0.8;
 }
 
 /* NAVBAR */
@@ -144,6 +143,16 @@ h2{
     font-size: 14px;
 }
 
+/* CARD */
+.card {
+    padding: 1rem;
+    background-color: var(--card-color);
+    box-shadow: var(--colore-ombra);
+}
+
+.ombra {
+    box-shadow: var(--colore-ombra);
+}
 
 @media screen and (min-width: 440px){
     body{
@@ -236,15 +245,12 @@ h2{
         background-color: var(--navbar-color);
         position: absolute;
         z-index: 1;
+        border: 2px solid black;
         margin-left: -7px;
         margin-top: 8px;
     }
     
     .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    
-    .dropdown-content a {
         display: block;
     }
 
