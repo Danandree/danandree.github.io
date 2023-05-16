@@ -114,7 +114,7 @@ h2{
     color: black;
 }
 
-.navbar-menu a:active {
+.navbar-menu > a:active {
     background-color:  var(--active-color);
     color: white;
 }
@@ -122,6 +122,10 @@ h2{
 /* DROPDOWN */
 .dropdown {
     display: none;
+}
+
+.dropdown > a:active {
+    background-color: red;
 }
 
 .social-logo {
@@ -241,9 +245,7 @@ h2{
         text-decoration: none;
     }
 
-    .dropdown > a:hover {
-        background-color: var(--hover-color);
-    }
+    
 
     .dropdown-content{
         display: none;
