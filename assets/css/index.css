@@ -1,12 +1,4 @@
 /* CONTAINER */
-.container {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 5vw;
-    gap: 2rem;
-    line-height: 1.6;
-    margin-bottom: 3rem;
-}
 .card-orizzontale {
     display: flex;
     flex-wrap: wrap;
@@ -33,7 +25,11 @@
 .img-logo{
     width: 100%;
 }
-
+@media screen and (min-width: 811px){
+    .container{
+        padding-top: 2rem;
+    }
+}
 @media screen and (min-width: 1170px){
     .container {
         flex-direction: row;
@@ -53,8 +49,8 @@
     .card-header {
         display: flex;
         width: 100%;
-        align-items: center;        
-        margin: 2rem 0;
+        align-items: center;   
+        margin-bottom: 3rem;     
     }
     .card-header img {
         height: 300px;
@@ -64,7 +60,7 @@
         width: 60%;
     }
 }
-@media screen and (min-width: 1170px){
+@media screen and (min-width: 1570px){
     .card-header img {
         height: 300px;
         width: 400px;

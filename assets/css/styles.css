@@ -152,7 +152,15 @@ h2{
 .footer p{
     font-size: 14px;
 }
-
+/* CONTAINER */
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 5vw;
+    gap: 1rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
 /* CARD */
 .card {
     padding: 1rem;

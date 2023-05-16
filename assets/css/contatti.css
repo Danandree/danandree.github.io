@@ -1,10 +1,10 @@
 /* CONTAINER CONTATTI */
+
 .container-contatti {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem 5vw;
 }
 
 .container-contatti h2 a{
@@ -58,7 +58,6 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem 5vw;
 }
 
 .immagini-riempitive img {
@@ -100,6 +99,9 @@ textarea {
 }
 
 @media screen and (min-width: 811px){
+    .container{
+        padding-top: 2rem;
+    }
     input, textarea {
         font-size: 16px;
     }
@@ -127,7 +129,8 @@ textarea {
     }
 
     .immagini-riempitive {
-        gap: 1rem;
+        padding-top: 2rem;
+        gap: 4rem;
     }
     
     #img3 {
