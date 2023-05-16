@@ -1,8 +1,6 @@
 .navbar-lavori {
-    width: 100%;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1rem;
     gap: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -20,6 +18,13 @@
     line-height: 1.6;
     margin-bottom: 3rem;
 }
+.container a {
+    text-decoration: none;
+    padding: 1rem;
+}
+.container a:hover{
+    background-color: #ddd;
+}
 
 .card-lavori {
     display: flex;
@@ -27,4 +32,50 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.card-lavori img{
+    margin-top: 1rem;
+    width: 50%;
+}
+.card-titolo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.card-testo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 440px){
+    .card-lavori{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card-testo {
+        width: 55%;
+    }
+    .card-lavori img {
+        width: 40%;
+    }
+    .inverso {
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (min-width: 811px){
+    .card-lavori {
+        justify-content: space-around;
+        gap: 0 3rem;
+    }
+    .card-lavori img {
+        width: 25%;
+        margin: 0;
+    }
+    .card-testo {
+        width: 60%;
+    }
 }

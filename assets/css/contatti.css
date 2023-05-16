@@ -56,7 +56,6 @@ textarea {
 }
 .immagini-riempitive {
     display: flex;
-    height: fit-content;
     justify-content: center;
     align-items: center;
     margin: 1rem 5vw;
@@ -64,6 +63,7 @@ textarea {
 
 .immagini-riempitive img {
     display: none;
+    width: 100%;
 }
 
 #img1 {
@@ -132,5 +132,6 @@ textarea {
     
     #img3 {
         display: block;
+        width: 100%;
     }
 }

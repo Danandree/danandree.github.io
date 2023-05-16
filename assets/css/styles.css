@@ -153,7 +153,6 @@ h2{
 .card {
     padding: 1rem;
     background-color: var(--card-color);
-    box-shadow: var(--colore-ombra);
 }
 
 .ombra {
@@ -165,17 +164,17 @@ h2{
         font-size: 18px;
     }
     h2 {
-        font-size: 40px;
+        font-size: 42px;
     }
     p, li {
-        font-size: 18px;
+        font-size: 20px;
     }
     /* NAVBAR*/
     .navbar {
         justify-content: space-around;
     }
     .navbar a {
-        font-size: 24px;
+        font-size: 30px;
     }
     .navbar-menu{
         gap: 6px;
@@ -185,11 +184,11 @@ h2{
 @media screen and (min-width: 811px){
 
     h2 {
-        font-size: 52px;
+        font-size: 54px;
     }
 
     p, li {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     /* BANNER HEADER */
@@ -209,10 +208,10 @@ h2{
 
     /* NAVBAR */
     .navbar {
-        height: 75px;
+        height: 100px;
         justify-content: start;
         align-items: center;
-        padding-left: 50px;
+        padding-left: 6rem;
     }
 
     .navbar-menu{
@@ -223,11 +222,11 @@ h2{
     }
 
     .navbar a {
-        font-size: 26px;
+        font-size: 34px;
     }
 
     .navbar a:hover {
-        transform: scale(1.3);
+        transform: scale(1.5);
     }
 
     /* DROPDOWN */
@@ -251,7 +250,7 @@ h2{
         background-color: var(--navbar-color);
         position: absolute;
         z-index: 1;
-        border: 2px solid var(--hover-color);
+        border: 2px solid var(--hover-color); /* Bordo per aggiungere enfasi? */
         margin-left: -7px;
         margin-top: 8px;
     }
@@ -266,6 +265,21 @@ h2{
 
     .social-logo {
         display: none;
+    }
+
+    /* CONTAINER */
+    .container{
+        padding: 0 5rem;
+    }
+}
+
+@media screen and (min-width: 1520px){
+    .navbar{
+        padding-left: 10rem;
+    }
+    
+    .container{
+        padding: 0 10rem;
     }
 }
 
