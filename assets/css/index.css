@@ -52,17 +52,10 @@
         align-items: center;   
         margin-bottom: 3rem;     
     }
-    .card-header img {
-        height: 300px;
-        width: 200px;
-    }
+
     .card-header div {
         width: 60%;
     }
 }
 @media screen and (min-width: 1570px){
-    .card-header img {
-        height: 300px;
-        width: 400px;
-    }
 }
