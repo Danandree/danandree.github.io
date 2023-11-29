@@ -7,47 +7,25 @@
     <link rel="icon" type="image/x-icon" href="assets/img/logo2.svg"/>
     <link rel="stylesheet" href="assets/css/styles.css"/>
     <link rel="stylesheet" href="assets/css/contatti.css"/>
-    <!-- EMAILJS SCRIPT -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init('ZrPlbdzShu1cC5p-q');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                emailjs.sendForm('service_9u3weid', 'template_woa39wh', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+    <script src="assets/script/emailjs.js" defer></script>
 </head>
 <body>
-    <!-- HEADER -->
     <header class="banner-header" >
-        <!-- <h1>Daniele Andreetta</h1> -->
+        <h1>Daniele Andreetta</h1>
         <a href="index.html" class="logo"><img src="assets/img/logo-mod-arancio.png" alt="img logo"/></a>
     </header>
-    <!-- NAVBAR -->
     <div class="navbar">
         <div class="navbar-menu">
             <a href="index.html">Home</a>
             <a href="lavori.html">Lavori</a>
             <a href="contatti.html">Contatti</a>
-            <!-- DROPDOWN MENU -->
             <div class="dropdown">
                 <a class="dropdownbtn" href="#social">Social</a>
                 <div class="dropdown-content">
                     <a href="https://github.com/Danandree">Github</a>
                 </div>
             </div>
-            <!-- SOCIAL - LOGO -->
             <div class="social-logo">
                 <a href="https://github.com/Danandree"><img src="assets/img/github-mark.svg"/></a>
                 <!--<a href="http://www.facebook.com"><img src="assets/img/logo-facebook.png"/></a>
@@ -56,7 +34,6 @@
         </div>
         <a href="#" class="logo"><img id="img-logo-navbar" src="assets/img/logo2.svg" alt="IMG LOGO"/></a>
     </div>
-    <!-- CONTAINER CONTATTI -->
     <div class="container">
         <div class="container-contatti card ombra">
             <h2>Qualche proposta?</h2>
@@ -83,7 +60,6 @@
         <img class="ombra" id="img3" src="assets/img/3D_videocamera _drone.png"/>
         </div>
     </div>
-    <!-- FOOTER -->
     <div class="footer">
         <p>Daniele Andreetta</p>
         <div id="ultimoAggiornamento"></div>
