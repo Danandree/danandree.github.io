@@ -69,6 +69,12 @@ textarea {
     display: block;
     width: 100%;
 }
+.messaggio-grazie > p {
+    font-size: 12px;
+}
+.messaggio-grazie > h3 {
+    font-size: 18px;
+}
 
 @media screen and (min-width:440px) {
     input, textarea {
@@ -95,6 +101,12 @@ textarea {
     .submit-button {
         height: 30px;
         font-size: 18px;
+    }
+    .messaggio-grazie > p {
+        font-size: 18px;
+    }
+    .messaggio-grazie > h3 {
+        font-size: 28px;
     }
 }
 
@@ -136,5 +148,11 @@ textarea {
     #img3 {
         display: block;
         width: 100%;
+    }
+    .messaggio-grazie > p {
+        font-size: 28px;
+    }
+    .messaggio-grazie > h3 {
+        font-size: 38px;
     }
 }

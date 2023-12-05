@@ -8,6 +8,8 @@ window.onload = function() {
         emailjs.sendForm('service_9u3weid', 'template_woa39wh', this)
             .then(function() {
                 console.log('SUCCESS!');
+                document.getElementById('msg-grazie').style.display = "flex";
+                document.getElementById('contact-form').reset();
             }, function(error) {
                 console.log('FAILED...', error);
             });
