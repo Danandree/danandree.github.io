@@ -1,0 +1,110 @@
+{
+    "title": "Daniele Andreetta | Full Stack Developer",
+    "name": "Daniele Andreetta",
+    "subtitle": "Full Stack Developer | Creatore di Soluzioni Digitali su Misura",
+    "logo": "../assets/img/logo.svg",
+    "photo": "../assets/img/foto-profilo.png",
+    "projects": [
+        {
+            "title": "Calcettistiche",
+            "description": "Calcettistiche, l'app per un calcetto con le statistiche! Chi è il più forte tra i tuoi amici? Chi si impegna di più? Chi è il vero bomber? Niente più zuffe su si chi sia il migliore, adesso lo dicono le statistiche! Registra giocatori e partite grazie a questa semplice app. L'appliczione tiene traccia delle partite fatte da ciascun giocatore, quante ne ha saltate, con chi ha giocato e quanti gol ha fatto. Pronto a perdere le vecchie amicizie in campo?",
+            "link": "https://calcettistiche.web.app",
+            "img": "../assets/img/Calcetistiche-thumb.png"
+        },
+        {
+            "title": "Angual Hacker News Viewer",
+            "description": "Applicazione Angular che si connette al servizio Hacker News e ne riporta le notizie.",
+            "link": "https://hacker-news-viewer-angul-979f2.web.app/",
+            "img": "../assets/img/hackerNewsViewer-thuumb.png"
+        },
+        {
+            "title": "Siti web responsivi",
+            "description": "Siti web responsivi e mobile friendly. Creati usando solo html, css e javascript.",
+            "link": "https://github.com/Danandree/website-templates/",
+            "img": "../assets/img/Laptop-Work-Conditionjpg.jpg"
+        }
+    ],
+    "comingSoon": [
+        {
+            "title": "Angular shop",
+            "description": "Store online realizzato in angular. Si connette ad servizio XXX per ricevere delle informazioni su dei prodotti fake.",
+            "link": "https://www.google.com/",
+            "img": "../assets/img/angular-shop-thumb.png"
+        },
+        {
+            "title": "LT Workout",
+            "description": "Applicazione angular che permette din gestire le schede fatte per gli allenamneti in palestra",
+            "link": "https://www.google.com/",
+            "img": "../assets/img/Laptop-Work-Conditionjpg.jpg"
+        }
+    ],
+    "skills": [
+        {
+            "name": "HTML",
+            "img": "../assets/img/html-5-svgrepo-com.svg"
+        },
+        {
+            "name": "CSS",
+            "img": "../assets/img/css-3-svgrepo-com.svg"
+        },
+        {
+            "name": "Javascript",
+            "img": "../assets/img/javascript-svgrepo-com.svg"
+        },
+        {
+            "name": "Angular",
+            "img": "../assets/img/angular-svgrepo-com.svg"
+        },
+        {
+            "name": "Node",
+            "img": "../assets/img/node-js-svgrepo-com.svg"
+        },
+        {
+            "name": "Github",
+            "img": "../assets/img/github-mark.svg"
+        },
+        {
+            "name": "Java",
+            "img": "../assets/img/java-svgrepo-com.svg"
+        },
+        {
+            "name": "MongoDB",
+            "img": "../assets/img/mongo-svgrepo-com.svg"
+        },
+        {
+            "name": "Python",
+            "img": "../assets/img/python-svgrepo-com.svg"
+        },
+        {
+            "name": "Linux",
+            "img": "../assets/img/linux-svgrepo-com.svg"
+        }
+    ],
+    "social": {
+        "github": {
+            "link": "https://github.com/DanieleAndreetta",
+            "img": "../assets/img/github.png"
+        },
+        "linkedin": {
+            "link": "https://www.linkedin.com/in/daniele-andreetta/",
+            "img": "../assets/img/linkedin.png"
+        },
+        "twitter": {
+            "link": "https://twitter.com/DanieleAndreetta",
+            "img": "../assets/img/twitter.png"
+        },
+        "instagram": {
+            "link": "https://www.instagram.com/daniele_andreetta/",
+            "img": "../assets/img/instagram.png"
+        },
+        "youtube": {
+            "link": "https://www.youtube.com/channel/UCn3Ea0PvR7E0zvEeI2a3e0A",
+            "img": "../assets/img/youtube.png"
+        },
+        "facebook": {
+            "link": "https://www.facebook.com/daniele.andreetta",
+            "img": "../assets/img/facebook.png"
+        }
+    },
+    "footer": "Copyright © Creato con ❤️ da Daniele Andreetta"
+}

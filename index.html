@@ -1,99 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Daniele Andreetta</title>
-    <meta property="og:title" content="Daniele Andreetta"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="https://danandree.github.io/assets/img/logo-mod-arancio.png"/>
-    <meta property="og:url" content="https://danandree.github.io"/>"
-    <meta property="og:description" content="Chi sono, lavori, progetti, passioni">
-    <link rel="icon" type="image/x-icon" href="assets/img/logo2.svg"/>
-    <link rel="stylesheet" href="assets/css/styles.css"/>
-    <link rel="stylesheet" href="assets/css/index.css"/>
-    <script src="assets/script/ultimoAggiornamento.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.svg">
+    <script src="./assets/script/index.js" defer></script>
+    <script src="./assets/script/getData.js" type="module" defer></script>
+    <title class="home_title">Titolo</title>
 </head>
+
 <body>
-    <header class="banner-header" >
-        <h1>Daniele Andreetta</h1>
-        <a href="index.html" class="logo"><img src="assets/img/logo-mod-arancio.png" alt="img logo"/></a>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="titolo">
+                <div class="logo">
+                    <img #id="logo-img" src="./assets/img/logo.svg" alt="logo">
+                </div>
+                <h1 class="home_title">Nome Cognome</h1>
+            </div>
+            <div class="menu">
+                <img src="./assets/img/hamburger-menu.svg" alt="menu">
+            </div>
+            <ul class="menu-list">
+                <li id="homeButton">Home</li>
+                <li id="aboutButton">About</li>
+                <li id="contactButton">Contact</li>
+                <li id="workButton">Project</li>
+            </ul>
+        </div>
+        <nav class="menu-link hide">
+            <ul>
+                <li id="homeButton">Home</li>
+                <li id="aboutButton">About</li>
+                <li id="contactButton">Contact</li>
+                <li id="workButton">Project</li>
+            </ul>
+        </nav>
     </header>
-    <div class="navbar">
-        <div class="navbar-menu">
-            <a href="index.html">Home</a>
-            <a href="lavori.html">Lavori</a>
-            <a href="contatti.html">Contatti</a>
-            <div class="dropdown">
-                <a class="dropdownbtn" href="#social">Social</a>
-                <div class="dropdown-content">
-                    <a href="https://github.com/Danandree">Github</a>
+    <div class="container">
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1>Ciao, sono <span class="home_title">Nome Cognome</span></h1>
+                <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tenetur hic
+                    enim quos in
+                    mollitia.</p>
+            </div>
+        </section>
+        <section class="about-me" id="about">
+            <h2>Qualcosa su di me</h2>
+            <div class="profile-image">
+                <img src="./assets/img/foto-profilo.png" alt="photo">
+            </div>
+            <p>Ciao! Sono Daniele, un developer appassionato con esperienza in HTML, css, javaScript e framework come
+                Angular. Mi piace affrontare sfide complesse e trovare soluzioni innovative per
+                ottimizzare i processi. Ho lavorato su progetti che spaziano da applicazioni web a sistemi backend,
+                sempre con un occhio attento alla qualità del codice e all'esperienza utente. Sono entusiasta di
+                collaborare con team dinamici e contribuire a progetti significativi.</p>
+            <p>Quando non sono al computer amo passeggiare, volare col mio drone e nuotare</p>
+            <div class="self-proclamation">
+                <h3>Self Proclamation</h3>
+                <div class="self-proclamation-object">
+                    <img src="./assets/img/web-developer.svg">
+                    <p>Web developer</p>
+                </div>
+                <div class="self-proclamation-object">
+                    <img src="./assets/img/ux-uui.svg">
+                    <p>UX Enthusiast</p>
+                </div>
+                <div class="self-proclamation-object">
+                    <img src="./assets/img/drone-8-svgrepo-com.svg">
+                    <p>Flyer</p>
                 </div>
             </div>
-            <div class="social-logo">
-                <a href="https://github.com/Danandree"><img src="assets/img/github-mark.svg"/></a>
-                <!--<a href="http://www.facebook.com"><img src="assets/img/logo-facebook.png"/></a>
-                <a href="http://www.linkedin.com"><img src="assets/img/linkedin-logo.svg"/></a>-->
+        </section>
+        <section class="passion" id="passion">
+            <h2>Passion</h2>
+            <div class="passion-object-container">
+                <div class="passion-object">
+                    <h3>Design</h3>
+                    <div class="passion-img"><img src="./assets/img/laptop.svg"></div>
+                    <p>Lo sviluppo non riguarda solo l'aspetto e l'interfaccia di un prodotto. Include anche la sua
+                        funzionalità interna e l'esperienza complessiva dell'utente. Il mio obiettivo è creare
+                        applicazioni e sistemi che siano non solo efficienti, ma anche piacevoli da utilizzare su tutte
+                        le piattaforme digitali.</p>
+                </div>
+                <div class="passion-object">
+                    <h3>Development</h3>
+                    <div class="passion-img"><img src="./assets/img/bracket-coding.svg"></div>
+                    <p>Con una solida formazione in informatica, sono appassionato di sviluppo e design web, con un
+                        particolare interesse per le applicazioni web. Man mano che cresco come sviluppatore, il mio
+                        obiettivo è scrivere codice pulito e leggibile, che possa essere utilizzato da altri e sfruttato
+                        per creare software straordinario.</p>
+                </div>
+                <div class="passion-object">
+                    <h3>Involvement</h3>
+                    <div class="passion-img"><img src="./assets/img/rota-dentata.svg"></div>
+                    <p>Ho partecipato attivamente a diverse organizzazioni e iniziative, collaborando a eventi e
+                        progetti volti a migliorare la comunità. Sono sempre alla ricerca di opportunità per crescere
+                        professionalmente e contribuire in modo significativo alle attività a cui prendo parte.</p>
+                </div>
             </div>
-        </div>
-        <a href="#" class="logo"><img id="img-logo-navbar" src="assets/img/logo2.svg" alt="IMG LOGO"/></a>
+        </section>
+        <section class="experience" id="experience">
+            <h2>Experience</h2>
+            <p>Faccio sviluppo web da circa 5 anni e sono sempre desideroso di imparare di più in questo settore in
+                continua evoluzione.</p>
+            <h3>Alcune tecnologie con cui ho lavorato:</h3>
+            <div class="experience-object-container">
+                <!-- <div class="experience-object"><img src="./assets/img/html-5-svgrepo-com.svg"></div>
+                <div class="experience-object"><img src="./assets/img/css-3-svgrepo-com.svg"></div>
+                <div class="experience-object"><img src="./assets/img/javascript-svgrepo-com.svg"></div>
+                <div class="experience-object"><img src="./assets/img/node-js-svgrepo-com.svg"></div>
+                <div class="experience-object"><img src="./assets/img/angular-svgrepo-com.svg"></div>
+                <div class="experience-object"><img src="./assets/img/java-svgrepo-com.svg"></div>
+                <div class="experience-object"><img src="./assets/img/mongo-svgrepo-com.svg"></div>
+                <div class="experience-object"><img src="./assets/img/python-svgrepo-com.svg"></div>
+                <div class="experience-object"><img src="./assets/img/linux-svgrepo-com.svg"></div> -->
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <form class="contact-container">
+                <h2>Contattami</h2>
+                <div class="form-input">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-input">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" required email>
+                </div>
+                <div class="form-input">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" required></textarea>
+                </div>
+                <button type="submit" value="Send">Send</button>
+            </form>
+        </section>
+        <section class="work" id="work">
+            <h2>Lavori fatti</h2>
+            <h4>(altri in arrivo)</h4>
+            <!-- <a class="work-object work-object-1 project-element-card bk1">
+                <div class="magnifier-logo">
+                    <img src="./assets/img/magnifying-glass.svg">
+                </div>
+                <h3 class="work-title">Work 1</h3>
+            </a>
+            <a class="work-object work-object-1 project-element-card bk2">
+                <div class="magnifier-logo">
+                    <img src="./assets/img/magnifying-glass.svg">
+                </div>
+                <h3 class="work-title">Work 2</h3>
+            </a>
+            <a class="work-object work-object-1 project-element-card bk3">
+                <div class="magnifier-logo">
+                    <img src="./assets/img/magnifying-glass.svg">
+                </div>
+                <h3 class="work-title">Work 3</h3>
+            </a> -->
+        </section>
     </div>
-    <div class="container">
-        <div class="card-orizzontale card-header card ombra">
-            <div class="card-testo">
-                <h2>Daniele Andreetta</h2>
-                <p>Appassionato da sempre di tecnologia</p>
-                <p>Problem solver per diletto</p>
-            </div>
-            <img class="card-img ombra" src="assets/img/foto-4-resize.png" alt="immagine home"/>
-        </div>
-        <div class="card-reverse card-orizzontale card ombra">
-            <div class="card-testo">
-                <h2>Lavori</h2>
-                <ul>
-                    <li>BOT Discord</li>
-                    <li>Maker di oggettistica varia stampata in 3D</li>
-                    <li>Droni FPV</li>
-                    <li>Arduino</li>
-                    <li>Controller remoto</li>
-                </ul>
-            </div>
-            <img class="ombra" src="assets/img/lavori-mod.jpg" alt="LOGO"/>
-        </div>
-        <div class="card-orizzontale card ombra">
-            <div class="card-testo">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Progettazione e realizzazione di siti web con html e css</li>
-                    <li>Progettazione e realizzazione modelli per stampante 3D</li>
-                    <li>Programmazione bot per Discord</li>
-                    <li>Realizzazioni stampe 3D in più materiali</li>
-                    <li>Costruzione e consigli droni FPV</li>
-                </ul>
-            </div>
-            <img class="ombra" src="assets/img/wallpaper-skills-mod.jpg" alt="LOGO"/>
-        </div>
-        <div class="card-reverse card-orizzontale card ombra">
-            <div class="card-testo">
-                <h2>Soft Skills</h2>
-                <ul>
-                    <li>Problem solving</li>
-                    <li>Approccio analitico</li>
-                    <li>Discrezione</li>
-                    <li>Apertura mentale</li>
-                    <li>Predisposizione all'apprendimento</li>
-                </ul>
-            </div>
-            <img class="ombra" src="assets/img/wallpaper-soft-skills-mod.jpg" alt="LOGO"/>
-        </div>
-    </div>
-    <div class="footer">
-        <p>Daniele Andreetta</p>
-        <div id="ultimoAggiornamento"></div>
-        <!--<div class="loghi-social">
-            <a href="https://github.com/"><img src="assets/img/github-mark.svg" alt="Github"/></a>
-            <a href="http://www.facebook.com"><img src="assets/img/logo-facebook.png"/></a>
-        </div>-->
-    </div>
+    <footer class="footer">
+        <p>Copyright © 2024 Nome Cognome. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
