@@ -10,6 +10,14 @@ const experienceSection = document.querySelector("#experience");
 const passionSection = document.querySelector("#passion");
 const contactSection = document.querySelector("#contact");
 
+const submitButton = document.querySelector("#submit");
+submitButton.addEventListener("click", () => {
+    const name = document.querySelector("#name").value;
+    const email = document.querySelector("#email").value;
+    const message = document.querySelector("#message").value;
+    console.log(name, email, message);
+});
+
 const homeButton = document.querySelector("#homeButton");
 const aboutButton = document.querySelector("#aboutButton");
 const workButton = document.querySelector("#workButton");
