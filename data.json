@@ -6,6 +6,12 @@
     "photo": "../assets/img/foto-profilo.png",
     "projects": [
         {
+            "title": "Cod Compendium",
+            "description": "Tutte le news su CoD Black Ops 6, le armi meta e le guide agli easter egg della parte zombie",
+            "link": "https://cod-bo6.web.app",
+            "img": "../assets/img/cod-compendium-totale.png"
+        },
+        {
             "title": "Calcettistiche",
             "description": "Calcettistiche, l'app per un calcetto con le statistiche! Chi è il più forte tra i tuoi amici? Chi si impegna di più? Chi è il vero bomber? Niente più zuffe su si chi sia il migliore, adesso lo dicono le statistiche! Registra giocatori e partite grazie a questa semplice app. L'appliczione tiene traccia delle partite fatte da ciascun giocatore, quante ne ha saltate, con chi ha giocato e quanti gol ha fatto. Pronto a perdere le vecchie amicizie in campo?",
             "link": "https://calcettistiche.web.app",
