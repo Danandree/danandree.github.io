@@ -59,6 +59,7 @@ a:visited {
     background-color: var(--header-color);
     color: var(--header-text);
     z-index: 100;
+    border-bottom: solid 1px grey;
 }
 
 .navbar-container {
@@ -421,6 +422,15 @@ textarea {
     color: white;
 }
 
+input,
+textarea {
+    font-size: large;
+}
+@media screen and (max-width: 350px) {
+    .home_title {
+        font-size: 1.3rem;
+    }
+}
 @media screen and (min-width: 800px) {
 
     p,

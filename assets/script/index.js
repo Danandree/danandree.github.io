@@ -10,12 +10,30 @@ const experienceSection = document.querySelector("#experience");
 const passionSection = document.querySelector("#passion");
 const contactSection = document.querySelector("#contact");
 
-const submitButton = document.querySelector("#submit");
-submitButton.addEventListener("click", () => {
+(function () {
+    emailjs.init({
+        publicKey: "ZrPlbdzShu1cC5p-q",
+    });
+})();
+
+const contactContainer = document.getElementById("form");
+contactContainer.addEventListener("submit", (event) => {
+    event.preventDefault();
     const name = document.querySelector("#name").value;
     const email = document.querySelector("#email").value;
     const message = document.querySelector("#message").value;
+    if (name === "" || email === "" || message === "") { alert("Per favore riempiere tutti i campi"); return; }
+    if (!email.includes("@")) { alert("Per favore inserire una mail valida"); return; }
     console.log(name, email, message);
+    emailjs.sendForm("service_lpj7aph", "template_woa39wh", contactContainer)
+        .then(() => {
+            console.log('SUCCESS!');
+            alert(`Grazie ${name}, riceverai una risposta nel più breve tempo possibile!`);
+            contactContainer.reset();
+        }, (error) => {
+            console.log('FAILED...', error);
+            alert("Qualcosa e' andato storto, riprova piu' tardi");
+        });
 });
 
 const homeButton = document.querySelector("#homeButton");
@@ -84,3 +102,4 @@ navbar.addEventListener("click", (event) => {
 function removeActiveButtonColor() {
     sections.forEach((section) => { section.button.classList.remove("active-button-color"); });
 }
+
