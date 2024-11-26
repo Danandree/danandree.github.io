@@ -46,6 +46,7 @@ function createProjectCard(project) {
     let a = document.createElement("a");
     a.setAttribute("href", project.link);
     a.setAttribute("class", "work-object work-object-1 project-element-card");
+    a.setAttribute("target", "_blank");
     a.style.backgroundImage = `url(${project.img})`;
     let div = document.createElement("div");
     div.setAttribute("class", "magnifier-logo");
